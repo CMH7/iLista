@@ -1,0 +1,47 @@
+﻿@page "/"
+@layout CleanLayout
+
+<RadzenStack AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center" class="wh-100vwh">
+    <RadzenStack Orientation=Orientation.Horizontal JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Style="width: 70vw;">
+        <RadzenStack class="w-100" Gap="0">
+            <RadzenText Text="Create Account" TextStyle="TextStyle.DisplayH3" class="fw-bold mb-0 rz-color-primary" />
+            <RadzenText Text="iLista na ang dapat ilista!" />
+        </RadzenStack>
+    </RadzenStack>
+
+    <RadzenTemplateForm Data="@userVM" TItem="UserVM" Submit="@Submit">
+        <RadzenCard Style="width: 70vw;">
+            <RadzenStack AlignItems="AlignItems.Center" class="w-100">
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="First name">
+                        <RadzenTextBox @bind-Value=@userVM.FirstName Name="il-rtb-su-fname" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenRequiredValidator Component="il-rtb-su-fname" Text="Required" />
+                </RadzenStack>
+                
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="Last name">
+                        <RadzenTextBox @bind-Value=@userVM.LastName Name="il-rtb-su-lname" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenRequiredValidator Component="il-rtb-su-lname" Text="Required" />
+                </RadzenStack>
+                
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="Password">
+                        <RadzenTextBox @bind-Value=@userVM.Password Name="il-rtb-su-pass" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => PassValidator())" />
+                </RadzenStack>
+                
+                <RadzenButton ButtonType="ButtonType.Submit" Text="Create account" IsBusy=@appState.IsBusy class="w-100 mt-3" />
+            </RadzenStack>
+        </RadzenCard>
+    </RadzenTemplateForm>
+</RadzenStack>
+
+<style>
+    .wh-100vwh {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>

@@ -1,0 +1,33 @@
+﻿@page "/signin"
+@layout CleanLayout
+
+<RadzenStack AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center" class="wh-100vwh">
+    <RadzenStack Orientation=Orientation.Horizontal JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Style="width: 70vw;">
+        <RadzenStack class="w-100" Gap="0">
+            <RadzenText Text="Signin" TextStyle="TextStyle.DisplayH3" class="fw-bold mb-0 rz-color-primary" />
+            <RadzenText Text="Tanda mo pa ba mga nagastos mo today?" />
+        </RadzenStack>
+    </RadzenStack>
+
+    <RadzenTemplateForm Data="@creds" TItem="Creds" Submit="@Submit">
+        <RadzenCard Style="width: 70vw;">
+            <RadzenStack AlignItems="AlignItems.Center" class="w-100">
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="Password">
+                        <RadzenTextBox @bind-Value=@creds.Password Name="il-rtb-su-pass" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => PassValidator())" />
+                </RadzenStack>
+
+                <RadzenButton ButtonType="ButtonType.Submit" Text="Signin" IsBusy=@appState.IsBusy class="w-100 mt-3" />
+            </RadzenStack>
+        </RadzenCard>
+    </RadzenTemplateForm>
+</RadzenStack>
+
+<style>
+    .wh-100vwh {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>

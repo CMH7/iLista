@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+<RadzenComponents />
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenStack AlignItems=AlignItems.Center JustifyContent=JustifyContent.SpaceBetween class="wh-100vwh">
+    <RadzenCard class="w-100 rz-background-color-primary rz-border-radius-0">
+        <RadzenStack Orientation=Orientation.Horizontal JustifyContent=JustifyContent.Start AlignItems=AlignItems.Center class="w-100">
+            <RadzenText Text="iLista" TextStyle="TextStyle.DisplayH3" class="fw-bold rz-color-white" />
+        </RadzenStack>
+    </RadzenCard>
+
+    <div class="w-100">
+        @Body
+    </div>
+
+    <RadzenCard class="w-100">
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.SpaceAround">
+            @foreach(Modules module in modules)
+            {
+                <RadzenButton Icon="@module.Icon" Variant="@(module.Name == appState.CurrentPage || module.Icon == "add" ? Variant.Filled : Variant.Text)" Shade=@(module.Name == appState.CurrentPage || module.Icon == "add" ? Shade.Dark : Shade.Lighter ) Click="@(() => UpdateActiveModules(module))" />
+            }
+        </RadzenStack>
+    </RadzenCard>
+</RadzenStack>
+
+<style>
+    .wh-100vwh {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+

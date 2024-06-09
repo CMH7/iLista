@@ -1,0 +1,388 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Personal\\Projects\\iLista\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\signin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\signin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\signup.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\signup.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\appstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:appstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\signin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\signin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\signup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\signup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\layout\\cleanlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\layout\\cleanlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\ilista.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:ilista.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\ilista.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:ilista.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\pages\\getstarted.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\pages\\getstarted.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\domain\\dbobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:domain\\dbobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\services\\db\\sqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:services\\db\\sqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|d:\\personal\\projects\\ilista\\providers\\datetimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171A450B-4C2F-48C7-A3CB-2158C5954F77}|iLista.csproj|solutionrelative:providers\\datetimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:27:54.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T13:14:51.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Signin.razor.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signin.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Signin.razor.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signin.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\Signin.razor.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:08:15.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-05T13:16:46.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-05T13:16:38.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CleanLayout.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\CleanLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\CleanLayout.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Layout\\CleanLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\CleanLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T13:14:19.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "iLista.csproj",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\iLista.csproj",
+              "RelativeDocumentMoniker": "iLista.csproj",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\iLista.csproj",
+              "RelativeToolTip": "iLista.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-05T13:10:15.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "iLista",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\iLista.csproj",
+              "RelativeDocumentMoniker": "iLista.csproj",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\iLista.csproj",
+              "RelativeToolTip": "iLista.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-05T13:10:01.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Signup.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signup.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Signup.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signup.razor",
+              "RelativeToolTip": "Components\\Pages\\Signup.razor",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwC4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:43:05.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Signup.razor.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signup.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Signup.razor.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signup.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\Signup.razor.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:42:27.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:39:52.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Signin.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signin.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Signin.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\Signin.razor",
+              "RelativeToolTip": "Components\\Pages\\Signin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:39:15.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetStarted.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\GetStarted.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\GetStarted.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Pages\\GetStarted.razor",
+              "RelativeToolTip": "Components\\Pages\\GetStarted.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:38:10.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:37:01.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "GlobalUsings.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\GlobalUsings.cs",
+              "RelativeToolTip": "GlobalUsings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:33:13.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppState.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\AppState.cs",
+              "RelativeDocumentMoniker": "AppState.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\AppState.cs",
+              "RelativeToolTip": "AppState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:32:50.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:31:55.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T12:31:21.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SqliteDB.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Services\\DB\\SqliteDB.cs",
+              "RelativeDocumentMoniker": "Services\\DB\\SqliteDB.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Services\\DB\\SqliteDB.cs",
+              "RelativeToolTip": "Services\\DB\\SqliteDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:24:44.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DBObject.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Domain\\DBObject.cs",
+              "RelativeDocumentMoniker": "Domain\\DBObject.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Domain\\DBObject.cs",
+              "RelativeToolTip": "Domain\\DBObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:21:34.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Models\\Account.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Models\\Account.cs",
+              "RelativeToolTip": "Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:17:50.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:15:03.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DateTimeProvider.cs",
+              "DocumentMoniker": "D:\\Personal\\Projects\\iLista\\Providers\\DateTimeProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\DateTimeProvider.cs",
+              "ToolTip": "D:\\Personal\\Projects\\iLista\\Providers\\DateTimeProvider.cs",
+              "RelativeToolTip": "Providers\\DateTimeProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T12:13:24.204Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
