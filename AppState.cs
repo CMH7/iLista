@@ -18,5 +18,7 @@ public class AppState
 
     public User CurrentUser { get; set; }
 
+    public Account CurrentAccount { get; set; }
+
     public string CurrentPage { get; set; }
 }

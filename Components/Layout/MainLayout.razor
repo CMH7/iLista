@@ -5,8 +5,11 @@
 
 <RadzenStack AlignItems=AlignItems.Center JustifyContent=JustifyContent.SpaceBetween class="wh-100vwh">
     <RadzenCard class="w-100 rz-background-color-primary rz-border-radius-0">
-        <RadzenStack Orientation=Orientation.Horizontal JustifyContent=JustifyContent.Start AlignItems=AlignItems.Center class="w-100">
+        <RadzenStack Orientation=Orientation.Horizontal JustifyContent=JustifyContent.SpaceBetween AlignItems=AlignItems.Center class="w-100">
             <RadzenText Text="iLista" TextStyle="TextStyle.DisplayH3" class="fw-bold rz-color-white" />
+            <RadzenFormField Text="Account">
+                <RadzenDropDown Data="@accounts" @bind-Value=@appState.CurrentAccount.Id TextProperty="Name" ValueProperty="Id" />
+            </RadzenFormField>
         </RadzenStack>
     </RadzenCard>
 

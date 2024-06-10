@@ -235,6 +235,15 @@
     <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster\7.4.0\lib\net7.0\Mapster.dll">
+      <PackagePath>Mapster.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster.core\1.2.1\lib\net7.0\Mapster.Core.dll">
+      <PackagePath>Mapster.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster.dependencyinjection\1.0.1\lib\net7.0\Mapster.DependencyInjection.dll">
+      <PackagePath>Mapster.DependencyInjection.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\microsoft.aspnetcore.authorization\8.0.0\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
     </AppxPackagedFile>

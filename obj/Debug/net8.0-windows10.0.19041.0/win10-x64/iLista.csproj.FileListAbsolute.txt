@@ -209,3 +209,7 @@ D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\quali
 D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\iLista.sourcelink.json
+D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Mapster.dll
+D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Mapster.Core.dll
+D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Mapster.DependencyInjection.dll

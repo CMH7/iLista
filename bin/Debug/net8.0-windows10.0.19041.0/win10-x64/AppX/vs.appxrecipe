@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-09T12:58:51.708</Modified>
+      <Modified>2024-06-10T13:51:19.845</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-05T13:14:38.025</Modified>
+      <Modified>2024-06-10T13:01:24.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\iLista.runtimeconfig.json">
       <PackagePath>iLista.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-05T13:14:37.944</Modified>
+      <Modified>2024-06-10T13:01:24.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\iLista.dll">
       <PackagePath>iLista.dll</PackagePath>
-      <Modified>2024-06-09T12:58:49.794</Modified>
+      <Modified>2024-06-10T13:51:19.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>iLista.exe</PackagePath>
-      <Modified>2024-06-09T12:58:50.097</Modified>
+      <Modified>2024-06-10T13:51:19.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Personal\Projects\iLista\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\iLista.deps.json">
       <PackagePath>iLista.deps.json</PackagePath>
-      <Modified>2024-06-05T13:14:37.942</Modified>
+      <Modified>2024-06-10T13:01:24.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -313,6 +313,18 @@
     <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster\7.4.0\lib\net7.0\Mapster.dll">
+      <PackagePath>Mapster.dll</PackagePath>
+      <Modified>2023-09-21T20:37:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster.core\1.2.1\lib\net7.0\Mapster.Core.dll">
+      <PackagePath>Mapster.Core.dll</PackagePath>
+      <Modified>2023-09-21T20:37:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\mapster.dependencyinjection\1.0.1\lib\net7.0\Mapster.DependencyInjection.dll">
+      <PackagePath>Mapster.DependencyInjection.dll</PackagePath>
+      <Modified>2023-09-21T20:37:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\.nuget\packages\microsoft.aspnetcore.authorization\8.0.0\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>

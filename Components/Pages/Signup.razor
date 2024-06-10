@@ -9,7 +9,7 @@
         </RadzenStack>
     </RadzenStack>
 
-    <RadzenTemplateForm Data="@userVM" TItem="UserVM" Submit="@Submit">
+    <RadzenTemplateForm Data="@userVM" TItem="UserVM" Submit="@(async () => await Submit())">
         <RadzenCard Style="width: 70vw;">
             <RadzenStack AlignItems="AlignItems.Center" class="w-100">
                 <RadzenStack Gap="0" class="w-100">
@@ -24,6 +24,13 @@
                         <RadzenTextBox @bind-Value=@userVM.LastName Name="il-rtb-su-lname" class="w-100" />
                     </RadzenFormField>
                     <RadzenRequiredValidator Component="il-rtb-su-lname" Text="Required" />
+                </RadzenStack>
+                
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="Username">
+                        <RadzenTextBox @bind-Value=@userVM.UserName Name="il-rtb-su-uname" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenRequiredValidator Component="il-rtb-su-uname" Text="Required" />
                 </RadzenStack>
                 
                 <RadzenStack Gap="0" class="w-100">

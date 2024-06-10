@@ -5,8 +5,10 @@ namespace iLista.Components.Layout;
 public partial class MainLayout : IAsyncDisposable
 {
     [Inject] private AppState appState { get; set; }
+
     // List
     private List<Modules> modules { get; set; }
+    private List<Account> accounts { get; set; }
 
     protected override void OnInitialized()
     {
@@ -27,6 +29,7 @@ public partial class MainLayout : IAsyncDisposable
                     Link = "/settings"
                 }
             ];
+        accounts ??= [];
         setup();
         base.OnInitialized();
     }
@@ -44,6 +47,8 @@ public partial class MainLayout : IAsyncDisposable
     private void setup()
     {
         appState ??= new();
+        appState.CurrentUser ??= new();
+        appState.CurrentAccount ??= new();
         appState.stateHasChanged += StateHasChanged;
     }
 

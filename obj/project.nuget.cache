@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "eqEJFc9WZ63Alq57ECKr+H52qEg90pTJRQzm6Rtn8MK2jrPReC5KjFTkfuJuPCbT+P7hxWG8W9oW4MZRlWG5DA==",
+  "dgSpecHash": "nYyN0DzZwwllWXoGYwo8Zhn0xamsdmEnv06iS2CUwh64qHRpvSe1KPDow2MHyO5qsH4/7P7COiM2QbZdQV2K9Q==",
   "success": true,
   "projectFilePath": "D:\\Personal\\Projects\\iLista\\iLista.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\charl\\.nuget\\packages\\dartsassbuilder\\1.0.0\\dartsassbuilder.1.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.0\\microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",

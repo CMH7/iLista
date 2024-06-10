@@ -9,9 +9,16 @@
         </RadzenStack>
     </RadzenStack>
 
-    <RadzenTemplateForm Data="@creds" TItem="Creds" Submit="@Submit">
+    <RadzenTemplateForm Data="@creds" TItem="Creds" Submit="@(async () => await Submit())">
         <RadzenCard Style="width: 70vw;">
             <RadzenStack AlignItems="AlignItems.Center" class="w-100">
+                <RadzenStack Gap="0" class="w-100">
+                    <RadzenFormField Text="Username">
+                        <RadzenTextBox @bind-Value=@creds.UserName Name="il-rtb-su-uname" class="w-100" />
+                    </RadzenFormField>
+                    <RadzenRequiredValidator Text="Required" Component="il-rtb-su-uname" />
+                </RadzenStack>
+                
                 <RadzenStack Gap="0" class="w-100">
                     <RadzenFormField Text="Password">
                         <RadzenTextBox @bind-Value=@creds.Password Name="il-rtb-su-pass" class="w-100" />
