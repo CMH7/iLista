@@ -22,6 +22,7 @@ public partial class Signup : IAsyncDisposable
     private void setup()
     {
         appState ??= new();
+        appState.CurrentPage ??= "Sign up";
         appState.stateHasChanged += StateHasChanged;
     }
 
@@ -37,7 +38,7 @@ public partial class Signup : IAsyncDisposable
         try
         {
             bool existing = await ExistingInDB();
-            if (!existing)
+            if (existing)
             {
                 notifService.Notify(NotificationSeverity.Error, detail: "Username exists. Sign in instead", closeOnClick: true);
                 return;

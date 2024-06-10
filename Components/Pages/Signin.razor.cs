@@ -21,6 +21,7 @@ public partial class Signin : IAsyncDisposable
     private void setup()
     {
         appState ??= new();
+        appState.CurrentPage ??= "Sign in";
         appState.stateHasChanged += StateHasChanged;
     }
 

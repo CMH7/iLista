@@ -1,1 +1,0 @@
-D:\Personal\Projects\iLista\iLista.csproj;x64
