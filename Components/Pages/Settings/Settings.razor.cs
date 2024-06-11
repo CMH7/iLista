@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Components;
 
-namespace iLista.Components.Pages;
+namespace iLista.Components.Pages.Settings;
 
-public partial class Home : IAsyncDisposable
+public partial class Settings : IAsyncDisposable
 {
     [Inject] private AppState appState { get; set; }
 
@@ -15,7 +15,7 @@ public partial class Home : IAsyncDisposable
     private void setup()
     {
         appState ??= new();
-        appState.CurrentPage = "Home";
+        appState.CurrentPage = "Settings";
         appState.stateHasChanged += StateHasChanged;
     }
 

@@ -5,10 +5,10 @@ namespace iLista.Components.Layout;
 public partial class MainLayout : IAsyncDisposable
 {
     [Inject] private AppState appState { get; set; }
+    [Inject] private NavigationManager navManager { get; set; }
 
     // List
     private List<Modules> modules { get; set; }
-    private List<Account> accounts { get; set; }
 
     protected override void OnInitialized()
     {
@@ -16,7 +16,8 @@ public partial class MainLayout : IAsyncDisposable
                 new(){
                     Name = "Home",
                     Icon = "home",
-                    Link = "/home"
+                    Link = "/home",
+                    Active = true
                 },
                 new(){
                     Name = "Add Transaction",
@@ -29,34 +30,32 @@ public partial class MainLayout : IAsyncDisposable
                     Link = "/settings"
                 }
             ];
-        accounts ??= [];
         setup();
         base.OnInitialized();
     }
 
     protected override void OnAfterRender(bool firstRender)
     {
-        if(firstRender)
-        {
-            UpdateActiveModules(modules[0]);
-            StateHasChanged();
-        }
+        if(modules.First(x => x.Active).Name != appState.CurrentPage) UpdateActiveModules(modules.IntersectBy([appState.CurrentPage], x => x.Name).ToList().First());
         base.OnAfterRender(firstRender);
     }
 
     private void setup()
     {
-        appState ??= new();
-        appState.CurrentUser ??= new();
-        appState.CurrentAccount ??= new();
         appState.stateHasChanged += StateHasChanged;
     }
 
-    private void UpdateActiveModules(Modules module, bool rerender = false)
+    private void NavigateTo(Modules module)
     {
+        navManager.NavigateTo(module.Link);
+    }
+
+    private void UpdateActiveModules(Modules module)
+    {
+        modules.ForEach(x => x.Active = false);
         appState.CurrentPage = module.Name;
         module.Active = true;
-        if (rerender) StateHasChanged();
+        StateHasChanged();
     }
 
     public ValueTask DisposeAsync()

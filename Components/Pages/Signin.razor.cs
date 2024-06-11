@@ -14,21 +14,55 @@ public partial class Signin : IAsyncDisposable
     {
         creds ??= new();
         setup();
-        if (appState is not null && appState.CurrentUser is not null && appState.CurrentAccount is not null) creds.UserName = appState.CurrentUser.UserName;
         base.OnInitialized();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (appState is not null && appState.CurrentUser is not null && appState.CurrentAccount is not null) creds.UserName = appState.CurrentUser.UserName;
+        else
+        {
+            bool hasusers = await HasUsers();
+            if (!hasusers)
+            {
+                appState = new();
+                navManager.NavigateTo("/", replace: true);
+            }
+
+            await SetCurrentUserAndAccount();
+        }
+        await base.OnInitializedAsync();
+    }
+
+    private async Task SetCurrentUserAndAccount()
+    {
+        User currentUser = (await App.Db.GetByConditionAsyncList<User>(x => x.CurrentUser)).First();
+        if(currentUser is null)
+            currentUser = (await App.Db.GetAllAsync<User>()).First();
+        
+        // set as state only not as current user in db
+        // setting as current user in db will only happen upon signing in
+        appState.CurrentUser = currentUser;
+        creds.UserName = appState.CurrentUser.UserName;
+    }
+
+    private async Task<bool> HasUsers()
+    {
+        List<User> users = await App.Db.GetAllAsync<User>();
+        return users.Count > 0;
     }
 
     private void setup()
     {
         appState ??= new();
-        appState.CurrentPage ??= "Sign in";
+        appState.CurrentPage = "Sign in";
         appState.stateHasChanged += StateHasChanged;
     }
 
-    private bool PassValidator()
+    private bool Validator(string text)
     {
-        if (string.IsNullOrEmpty(creds.Password)) return false;
-        if (creds.Password.Trim().Length < 8) return false;
+        if (string.IsNullOrEmpty(text)) return false;
+        if (text.Trim().Length < 8) return false;
         return true;
     }
 
@@ -37,16 +71,16 @@ public partial class Signin : IAsyncDisposable
         try
         {
             User? user = await GetUser();
-            if(user is not null)
-            {
-                if(appState.CurrentUser.Id != user.Id)
-                {
-                    appState.CurrentUser = user;
-                    appState.CurrentAccount = (await App.Db.GetByConditionAsyncList<Account>(x => x.Owner == user.Id)).First();
-                }
+            if (user is null) return;
 
-                navManager.NavigateTo("/home", replace: true);
+            if (appState.CurrentUser.Id == user.Id) await UpdateCurrentUserAndAccount(user);
+            else
+            {
+                await SwitchCurrentUsers(user);
+                await SwitchCurrentAccounts(user);
             }
+
+            navManager.NavigateTo("/home", replace: true);
         }
         catch (Exception ex)
         {
@@ -54,17 +88,90 @@ public partial class Signin : IAsyncDisposable
         }
     }
 
+    private async Task UpdateCurrentUserAndAccount(User sameUser)
+    {
+        try
+        {
+            // User
+            User oldSameUser = (await App.Db.GetByConditionAsyncList<User>(x => x.Id == sameUser.Id)).First();
+            oldSameUser.CurrentUser = true;
+            await App.Db.UpdateAsync(oldSameUser);
+
+            // Account
+            Account oldSameAccount = (await App.Db.GetByConditionAsyncList<Account>(x => x.Owner == sameUser.Id && x.CurrentAccount)).First();
+            oldSameAccount.CurrentAccount = true;
+            await App.Db.UpdateAsync(oldSameAccount);
+
+            appState.CurrentUser = oldSameUser;
+            appState.CurrentAccount = oldSameAccount;
+        }
+        catch (Exception ex)
+        {
+            notifService.Notify(NotificationSeverity.Error, detail: $"{ex.Message}", closeOnClick: true);
+            throw;
+        }
+    }
+
+    private async Task SwitchCurrentUsers(User newLoggedInUser)
+    {
+        try
+        {
+            // Update the newly logged in user as the current user and false to the old user
+            User newlyLoggedInUser = (await App.Db.GetByConditionAsyncList<User>(x => x.Id == newLoggedInUser.Id)).First();
+            newlyLoggedInUser.CurrentUser = true;
+            await App.Db.UpdateAsync(newlyLoggedInUser);
+
+            User oldLoggedInUser = (await App.Db.GetByConditionAsyncList<User>(x => x.Id == appState.CurrentUser.Id)).First();
+            oldLoggedInUser.CurrentUser = false;
+            await App.Db.UpdateAsync(oldLoggedInUser);
+
+            appState.CurrentUser = newlyLoggedInUser;
+        }
+        catch (Exception ex)
+        {
+            notifService.Notify(NotificationSeverity.Error, detail: $"{ex.Message}", closeOnClick: true);
+            throw;
+        }
+    }
+
+    private async Task SwitchCurrentAccounts(User newLoggedInUser)
+    {
+        try
+        {
+            // Update the newly logged in user's account as the current account and false to the old user's account
+            Account newlyLoggedInAccount = (await App.Db.GetByConditionAsyncList<Account>(x => x.Owner == newLoggedInUser.Id)).First();
+            newlyLoggedInAccount.CurrentAccount = true;
+            await App.Db.UpdateAsync(newlyLoggedInAccount);
+
+            Account oldLoggedInAccount = (await App.Db.GetByConditionAsyncList<Account>(x => x.Id == appState.CurrentAccount.Id)).First();
+            oldLoggedInAccount.CurrentAccount = false;
+            await App.Db.UpdateAsync(oldLoggedInAccount);
+
+            appState.CurrentAccount = newlyLoggedInAccount;
+        }
+        catch (Exception ex)
+        {
+            notifService.Notify(NotificationSeverity.Error, detail: $"{ex.Message}", closeOnClick: true);
+            throw;
+        }
+    }
+
     private async Task<User?> GetUser()
     {
         List<User> users = await App.Db.GetByConditionAsyncList<User>(x => x.UserName == creds.UserName);
-        if(users is not null && users.Count > 0)
+        if(users is null || users.Count == 0)
         {
-            if(users.First().Password == creds.Password) return users.First();
+            notifService.Notify(NotificationSeverity.Error, detail: "Username not found", closeOnClick: true);
+            return null;
+        }
+        
+        if(users.First().Password != creds.Password)
+        {
             notifService.Notify(NotificationSeverity.Error, detail: "Wrong password", closeOnClick: true);
             return null;
         }
-        notifService.Notify(NotificationSeverity.Error, detail: "Username not found", closeOnClick: true);
-        return null;
+
+        return users.First();
     }
 
     public ValueTask DisposeAsync()

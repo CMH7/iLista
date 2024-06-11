@@ -14,22 +14,37 @@ public partial class Signup : IAsyncDisposable
     protected override void OnInitialized()
     {
         setup();
-        if (appState is not null && appState.CurrentUser is not null && appState.CurrentAccount is not null) navManager.NavigateTo("/signin", true, true);
         userVM ??= new();
         base.OnInitialized();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        bool hasUsers = await HasUsers();
+        if(hasUsers)
+        {
+            navManager.NavigateTo("/signin", replace: true);
+        }
+        await base.OnInitializedAsync();
+    }
+
+    private async Task<bool> HasUsers()
+    {
+        List<User> users = await App.Db.GetAllAsync<User>();
+        return users.Count > 0;
     }
 
     private void setup()
     {
         appState ??= new();
-        appState.CurrentPage ??= "Sign up";
+        appState.CurrentPage = "Sign up";
         appState.stateHasChanged += StateHasChanged;
     }
 
-    private bool PassValidator()
+    private bool Validator(string text)
     {
-        if (string.IsNullOrEmpty(userVM.Password)) return false;
-        if (userVM.Password.Trim().Length < 8) return false;
+        if (string.IsNullOrEmpty(text)) return false;
+        if (text.Trim().Length < 8) return false;
         return true;
     }
 
@@ -53,6 +68,7 @@ public partial class Signup : IAsyncDisposable
             {
                 Owner = newUser.Id,
                 Name = "Cash",
+                CurrentAccount = true,
                 CreatedBy = newUser.Id,
                 CreatedDate = DateTimeProvider.Now,
                 UpdatedBy = newUser.Id,
@@ -91,5 +107,6 @@ public partial class Signup : IAsyncDisposable
         public string LastName { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public bool CurrentUser { get; set; } = true;
     }
 }

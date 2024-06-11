@@ -17,13 +17,15 @@
                         <RadzenTextBox @bind-Value=@creds.UserName Name="il-rtb-su-uname" class="w-100" />
                     </RadzenFormField>
                     <RadzenRequiredValidator Text="Required" Component="il-rtb-su-uname" />
+                    <RadzenCustomValidator Component="il-rtb-su-uname" Text="Should be 8 characters" Validator="@(() => Validator(creds.UserName))" />
                 </RadzenStack>
                 
                 <RadzenStack Gap="0" class="w-100">
                     <RadzenFormField Text="Password">
                         <RadzenTextBox @bind-Value=@creds.Password Name="il-rtb-su-pass" class="w-100" />
                     </RadzenFormField>
-                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => PassValidator())" />
+                    <RadzenRequiredValidator Text="Required" Component="il-rtb-su-pass" />
+                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => Validator(creds.Password))" />
                 </RadzenStack>
 
                 <RadzenButton ButtonType="ButtonType.Submit" Text="Signin" IsBusy=@appState.IsBusy class="w-100 mt-3" />

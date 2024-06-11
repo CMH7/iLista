@@ -31,13 +31,14 @@
                         <RadzenTextBox @bind-Value=@userVM.UserName Name="il-rtb-su-uname" class="w-100" />
                     </RadzenFormField>
                     <RadzenRequiredValidator Component="il-rtb-su-uname" Text="Required" />
+                    <RadzenCustomValidator Component="il-rtb-su-uname" Text="Should be 8 characters" Validator="@(() => Validator(userVM.UserName))" />
                 </RadzenStack>
                 
                 <RadzenStack Gap="0" class="w-100">
                     <RadzenFormField Text="Password">
                         <RadzenTextBox @bind-Value=@userVM.Password Name="il-rtb-su-pass" class="w-100" />
                     </RadzenFormField>
-                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => PassValidator())" />
+                    <RadzenCustomValidator Component="il-rtb-su-pass" Text="Should be 8 characters" Validator="@(() => Validator(userVM.Password))" />
                 </RadzenStack>
                 
                 <RadzenButton ButtonType="ButtonType.Submit" Text="Create account" IsBusy=@appState.IsBusy class="w-100 mt-3" />

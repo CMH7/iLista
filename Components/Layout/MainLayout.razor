@@ -2,14 +2,17 @@
 <RadzenComponents />
 <RadzenDialog />
 <RadzenNotification />
+<RadzenTooltip />
 
 <RadzenStack AlignItems=AlignItems.Center JustifyContent=JustifyContent.SpaceBetween class="wh-100vwh">
-    <RadzenCard class="w-100 rz-background-color-primary rz-border-radius-0">
-        <RadzenStack Orientation=Orientation.Horizontal JustifyContent=JustifyContent.SpaceBetween AlignItems=AlignItems.Center class="w-100">
-            <RadzenText Text="iLista" TextStyle="TextStyle.DisplayH3" class="fw-bold rz-color-white" />
-            <RadzenFormField Text="Account">
-                <RadzenDropDown Data="@accounts" @bind-Value=@appState.CurrentAccount.Id TextProperty="Name" ValueProperty="Id" />
-            </RadzenFormField>
+    <RadzenCard class="w-100 rz-background-color-primary rz-border-radius-0 rz-shadow-0">
+        <RadzenStack class="w-100" Gap="0">
+            <RadzenText Text="iLista" TextStyle="TextStyle.DisplayH4" class="fw-bold rz-color-white" />
+            <RadzenStack Orientation=Orientation.Horizontal JustifyContent=JustifyContent.SpaceBetween AlignItems=AlignItems.Center class="w-100">
+                <RadzenText Text="@appState.CurrentAccount.Name" TextStyle="TextStyle.Subtitle1" class="fw-bold rz-color-white mb-0" />
+
+                <RadzenButton Size="ButtonSize.ExtraSmall" Text="Change account" ButtonStyle=ButtonStyle.Light Variant=Variant.Flat class="rz-border-radius-10 custom-btn-text-style" />
+            </RadzenStack>
         </RadzenStack>
     </RadzenCard>
 
@@ -21,7 +24,13 @@
         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.SpaceAround">
             @foreach(Modules module in modules)
             {
-                <RadzenButton Icon="@module.Icon" Variant="@(module.Name == appState.CurrentPage || module.Icon == "add" ? Variant.Filled : Variant.Text)" Shade=@(module.Name == appState.CurrentPage || module.Icon == "add" ? Shade.Dark : Shade.Lighter ) Click="@(() => UpdateActiveModules(module))" />
+                <RadzenButton 
+                    Icon="@module.Icon" 
+                    IconColor="@(module.Active || module.Icon == "add" ? Colors.White : Colors.PrimaryLight)" 
+                    Variant="@(module.Active || module.Icon == "add" ? Variant.Filled : Variant.Text)"
+                              Shade=@(module.Active && module.Icon != "add" ? Shade.Light : module.Icon == "add" ? Shade.Dark : Shade.Lighter )
+                              Click="@(() => NavigateTo(module))" 
+                    class="px-3"/>
             }
         </RadzenStack>
     </RadzenCard>
@@ -31,6 +40,10 @@
     .wh-100vwh {
         width: 100vw;
         height: 100vh;
+    }
+
+    .custom-btn-text-style {
+        text-transform: none !important;
     }
 </style>
 
