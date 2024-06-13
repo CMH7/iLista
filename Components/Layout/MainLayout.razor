@@ -4,7 +4,7 @@
 <RadzenNotification />
 <RadzenTooltip />
 
-<RadzenStack AlignItems=AlignItems.Center JustifyContent=JustifyContent.SpaceBetween class="wh-100vwh">
+<RadzenStack AlignItems=AlignItems.Center JustifyContent=JustifyContent.SpaceBetween class="wh-100vwh" Gap="0">
     <RadzenCard class="w-100 rz-background-color-primary rz-border-radius-0 rz-shadow-0">
         <RadzenStack class="w-100" Gap="0">
             <RadzenText Text="iLista" TextStyle="TextStyle.DisplayH4" class="fw-bold rz-color-white" />
@@ -16,9 +16,9 @@
         </RadzenStack>
     </RadzenCard>
 
-    <div class="w-100">
+    <RadzenStack class="w-100 h-100">
         @Body
-    </div>
+    </RadzenStack>
 
     <RadzenCard class="w-100">
         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.SpaceAround">
