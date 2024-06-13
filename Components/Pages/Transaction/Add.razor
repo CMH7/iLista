@@ -1,0 +1,37 @@
+﻿@page "/transaction/add"
+
+<RadzenTabs Change="@TabChanged">
+    <Tabs>
+        <RadzenTabsItem class="flex-grow-1">
+            <Template>
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" AlignItems="AlignItems.Center" class="w-100 m-0">
+                    <RadzenButton Variant="@(_selectedIndex == 0 ? Variant.Filled : Variant.Text)" Text="Money in" Shade="Shade.Light" Size="ButtonSize.Small" />
+                </RadzenStack>
+            </Template>
+            <ChildContent>
+                <RadzenText Text="Money in" />
+            </ChildContent>
+        </RadzenTabsItem>
+        
+        <RadzenTabsItem class="flex-grow-1">
+            <Template>
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Center" AlignItems="AlignItems.Center" class="w-100 m-0">
+                    <RadzenButton Variant="@(_selectedIndex == 1 ? Variant.Filled : Variant.Text)" Text="Money out" Shade="Shade.Light" Size="ButtonSize.Small" />
+                </RadzenStack>
+            </Template>
+            <ChildContent>
+                <RadzenText Text="Money out" />
+            </ChildContent>
+        </RadzenTabsItem>
+    </Tabs>
+</RadzenTabs>
+
+<style>
+    .rz-tabview.rz-tabview-top > .rz-tabview-nav .rz-tabview-selected {
+        border-bottom: none !important;
+    }
+
+    .rz-tabview.rz-tabview-top > .rz-tabview-panels {
+        border-top: none !important;
+    }
+</style>
