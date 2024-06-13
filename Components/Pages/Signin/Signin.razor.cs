@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Components;
 
-namespace iLista.Components.Pages;
+namespace iLista.Components.Pages.Signin;
 
 public partial class Signin : IAsyncDisposable
 {
     [Inject] private AppState appState { get; set; }
     [Inject] private NavigationManager navManager { get; set; }
     [Inject] private NotificationService notifService { get; set; }
+    [Inject] private DialogService Ds { get; set; }
 
     private Creds creds { get; set; }
 
@@ -44,6 +45,12 @@ public partial class Signin : IAsyncDisposable
         // setting as current user in db will only happen upon signing in
         appState.CurrentUser = currentUser;
         creds.UserName = appState.CurrentUser.UserName;
+
+        if(appState.CurrentUser.AutoLogin)
+        {
+            creds.Password = appState.CurrentUser.Password;
+            await Submit();
+        }
     }
 
     private async Task<bool> HasUsers()
@@ -72,6 +79,16 @@ public partial class Signin : IAsyncDisposable
         {
             User? user = await GetUser();
             if (user is null) return;
+
+            if(!user.AutoLogin)
+            {
+                bool autoSignin = await AskAutoSignin();
+                if(autoSignin)
+                {
+                    user.AutoLogin = true;
+                    await App.Db.UpdateAsync(user);
+                }
+            }
 
             if (appState.CurrentUser.Id == user.Id) await UpdateCurrentUserAndAccount(user);
             else

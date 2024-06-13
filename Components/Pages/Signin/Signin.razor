@@ -40,3 +40,12 @@
         height: 100vh;
     }
 </style>
+
+@code {
+    private async Task<bool> AskAutoSignin()
+    {
+        bool? confirmed = await Ds.Confirm("Do you want to auto sign in next time?", "Auto Sign in?", new(){ OkButtonText = "Yes", ShowClose = false, CancelButtonText = "No" });
+        if (confirmed is null) return false;
+        return (bool)confirmed;
+    }
+}
